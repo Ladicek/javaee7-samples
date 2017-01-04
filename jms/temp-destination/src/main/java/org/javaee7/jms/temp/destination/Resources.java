@@ -1,5 +1,6 @@
 package org.javaee7.jms.temp.destination;
 
+import javax.ejb.Singleton;
 import javax.jms.JMSDestinationDefinition;
 
 /**
@@ -7,6 +8,7 @@ import javax.jms.JMSDestinationDefinition;
  * 
  * @author Patrik Dudits
  */
+@Singleton
 @JMSDestinationDefinition(
 	name = Resources.REQUEST_QUEUE, 
 	interfaceName = "javax.jms.Queue", 
